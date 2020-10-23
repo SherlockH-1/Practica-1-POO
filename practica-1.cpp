@@ -6,12 +6,12 @@ using namespace std;
 int main(){
     setlocale(LC_ALL,"");
 
-//Declaración de variables
+//DeclaraciÃ³n de variables
     int producto, cantidad;
     float subtotal, total;
     char otra;
 
-//Se muestra el menú de opciones para que el usuario haga una elección
+//Se muestra el menÃº de opciones para que el usuario haga una elecciÃ³n
     cout <<"Productos de almacen."<<endl;
     cout<< "\n -----MENU-----";
     cout<< "\n Producto 1 : $2.98";
@@ -21,12 +21,12 @@ int main(){
     cout<< "\n Producto 5 : $6.87 \n";
 
 
-//Primero se le pide al usuario que ingrese el número del producto que desea
+//Primero se le pide al usuario que ingrese el nÃºmero del producto que desea
     do {
-        cout<< "\n Elija el número de producto: \n";
+        cout<< "\n Elija el nÃºmero de producto: \n";
         cin>> producto;
 
-/*Si coincide con alguna de las opciones ahora se le pedira la cantidad del producto que quiere, se multiplica el
+/*Si coincide con alguna de las opciones, se le pedira la cantidad del producto que quiere. Se multiplica el
 precio de ese producto por la cantidad para obtener el subtotal el cual se muestra inmediatamente*/
          switch (producto) {
             case 1: cout << "\n Cantidad del producto: \n"; cin>> cantidad;
@@ -50,19 +50,19 @@ precio de ese producto por la cantidad para obtener el subtotal el cual se muest
              cout << "El subtotal es: \n "<<subtotal<<endl;
             break;
 
-/*Si la el número introducido no coincide se muestra el mensaje que no es valido entonces se ejecuta la siguiente
-instrucción*/
-            default: cout<<"\n Opción no valida \n";
+/*Si el nÃºmero introducido no coincide, alerta que la opciÃ³nno es valida, entonces, se ejecuta la siguiente
+instrucciÃ³n*/
+            default: cout<<"\n OpciÃ³n no valida \n";
             }
 
- /*En la variable total se va guardando el subtotal de los productos elegidos, se le pregunta al usuario si desea
- realizar otra compra, si es asi se repite el ciclo*/
+ /*En la variable total se va guardando el subtotal de los productos elegidos; se le pregunta al usuario si desea
+ realizar otra compra, si es asÃ­, se repite el ciclo*/
     total=subtotal+total;
-     cout <<" ¿Desea realizar otra compra? \n s=si  n=no \n"; cin >>otra;
+     cout <<" Â¿Desea realizar otra compra? \n s=si  n=no \n"; cin >>otra;
     }
     while ( otra=='s');
 
-//Si ya no desea realizar otra compra se muestra el valor total
+//Si ya no desea realizar otra compra, se muestra el valor total
     cout<< "El total es: \n $"<<total<<endl;
 
     return 0;
