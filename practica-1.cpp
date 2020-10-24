@@ -57,8 +57,7 @@ instrucción*/
  realizar otra compra, si es así, se repite el ciclo*/
 total = subtotal + total;
  cout << "\n¿Desea realizar otra compra? (s=sí / n=no) \n"; cin >> otra;
-}
-    while ( tolower(otra) == 's');
+} while ( tolower(otra) == 's');
 //Si ya no desea realizar otra compra, se muestra el valor total
     cout << "El total es: $" << total << endl;
     return 0;
