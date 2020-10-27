@@ -54,7 +54,6 @@ precio de ese producto por la cantidad para obtener el subtotal el cual se muest
 instrucción*/
         default: cout << "Lo sentimos, el producto no se encuentra en nuestro almacén." << endl;
         subtotal = 0;
-
 }
 /*En la variable total se va guardando el subtotal de los productos elegidos; se le pregunta al usuario si desea
  realizar otra compra, si es así, se repite el ciclo*/
